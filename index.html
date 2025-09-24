@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Swiggy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .logo{
+            
+            flex-direction: left;
+            display: flex;
+            height:50px;
+        }
+
+        header {
+            background: orange;
+            color: white;
+            padding: 20px;
+            text-align:end;
+            
+            
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            
+        }
+
+        .welcome {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+            background-color:antiquewhite;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        .welcome  div {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .welcome img {
+            max-width: 100%;
+            height:auto;
+            border-radius: 20px;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            gap: 20px;
+            flex:1 0 1;
+            
+        }
+
+        .card {
+            background-color:white;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            overflow: hidden;
+            flex:1 0 1;
+            flex-direction: column;
+            
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .card p {
+            font-size: 13px;
+            padding: 0 10px 15px;
+            color: #666;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            
+        }
+
+        @media (max-width: 600px) {
+            .welcome {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li.last {
+                margin: 10px 0;
+                display: flex;
+                text-align: center;
+            }
+            }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image6.jpeg" alt="swiggyLogo">
+        </div>
+        <nav>
+            <ul img src="image6.jpeg">
+                <li>Home</li>
+                <li>Menu</li>
+                
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome">
+        <div >
+
+            <h1>Delicious Food,Delivered Fast🍕</h1>
+            <p>Order your favorite meals and get them delivered right to your doorsteps in minutes.</p>
+            <input type="submit" value="order now">
+        </div>
+        <div>
+                <img src="image5.jpeg">
+            </div>            
+       </div>
+    </div>
+
+    <div class="content"><h2>Our popular Dishes</h2>
+        <div class="cards">
+           
+            <div class="card">
+                
+                <img src="image1.jpeg">
+                <h3>Rajasthan thali</h3>
+                <p>100</p>
+            </div>
+
+            <div class="card">
+                <img src="image2.jpeg" >
+                <h3>Burger</h3>
+                <p>100</p>
+            </div>
+
+            <div class="card">
+                <img src="image4.jpeg" >
+                <h3>Donut</h3>
+                <p>100</p>
+            </div>
+
+            <div class="card">
+                <img src="image5.jpeg" >
+                <h3>chicken</h3>
+                <p>100</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <nav>
+    <ul class="last">
+    <li>About
+    <p>We deliver delicious food at doorsteps</p></li>
+    <li>contact
+    <p>email-swiggy11@gmail.com</p></li>
+    <li>Follow Us
+    <p>insta-swiggy</p></li>
+    </ul> 
+    </nav>
+    
+    </footer>
+</body>
+</html>
